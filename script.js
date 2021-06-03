@@ -24,3 +24,36 @@ function show(objectURL){
   main.appendChild(section);
   section.appendChild(imagex);
 };
+
+/*
+Promises - shordhand functions
+
+********************************************************************************
+
+chooseToppings()
+.then(toppings =>
+  placeOrder(toppings)
+)
+.then(order =>
+  collectOrder(order)
+)
+.then(pizza =>
+  eatPizza(pizza)
+)
+.catch(failureCallback);
+
+********************************************************************************
+
+chooseToppings()
+.then(toppings => placeOrder(toppings))
+.then(order => collectOrder(order))
+.then(pizza => eatPizza(pizza))
+.catch(failureCallback);
+
+********************************************************************************
+
+chooseToppings().then(placeOrder).then(collectOrder).then(eatPizza).catch(failureCallback);
+
+********************************************************************************
+
+*/
